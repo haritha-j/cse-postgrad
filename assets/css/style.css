@@ -2250,7 +2250,7 @@ p {
       -o-transition: all 0.3s ease-out 0s;
       transition: all 0.3s ease-out 0s; }
       .footer-area .footer-copyright .social li a:hover {
-        color: #38f9d7; }
+        color: #f93892; }
 .footer-area.footer-dark {
   background-color: #121212; }
   .footer-area.footer-dark .footer-widget .footer-title {
@@ -2399,19 +2399,20 @@ p {
 }
 .innerTextDiv {
 	float: left;
-	height: 90px;
+	height: auto;
 	width: 90%;
 	margin-top: 20px;
 	line-height: 20px;
 	font-weight: 400;
 	text-align: justify;
-	margin-left: 20px;
+  margin-left: 20px;
+  margin-top: 30px;
 }
 .innerSubtext {
 	float: left;
 	height: auto;
 	width: 90%;
-	margin-top: 5px;
+	margin-top: 20px;
 	margin-left: 20px;
 	font-weight: bold;
 	margin-bottom: 20px;
@@ -2424,6 +2425,7 @@ p {
 	/* [disabled]margin-left: 5px; */
 	font-weight: 400;
 	margin-top: 7px;
+	margin-bottom: 20px;
 }
 .innerSubtextWithIcon {
 	float: left;
@@ -2578,4 +2580,91 @@ p {
 	font-size:14px;
 	font-weight:bold;
 }
+
+
+
+.card-list {
+  margin-top: 100px; 
+  margin-right: 30px;
+
+  width                : 80%;
+  display              : grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap             : 2em;
+}
+
+.card,
+.card-body,
+.card-footer {
+  display       : flex;
+  flex-direction: column;
+  align-items   : center;
+}
+
+.card {
+  border-radius: 18px;
+  background   : #fff;
+  box-shadow   : 4px 4px 25px rgba(0, 0, 0, 0.4);
+  overflow     : hidden;
+  cursor       : pointer;
+  transition   : transform 0.4s;
+}
+
+.card:hover {
+  transform : scale(1.05);
+  box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+  display  : block;
+  position : relative;
+  height   : 180px;
+  max-width: 100%;
+}
+
+.card-image img {
+  max-height     : 100%;
+  width          : 100%;
+  background-size: cover;
+}
+
+.card-body {
+  padding: 20px 28px;
+}
+
+.card-body .date {
+  font-weight: bolder;
+}
+
+
+.card-body p {
+  color      : gray;
+  font-size  : 1.1em;
+  line-height: 22px;
+  text-align : center;
+}
+
+.card-footer {
+  width                : 100%;
+  display              : grid;
+  background: #9b035b;
+}
+
+.card-footer .info {
+  font-size     : 0.9em;
+  padding       : 10px;
+  color         : #fff;
+
+  border-right  : 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+.card-footer .info .type {
+  margin-top    : 2px;
+  font-size     : 1.1em;
+}
+
+
+
+
 /*# sourceMappingURL=style.css.map */
