@@ -2668,3 +2668,58 @@ p {
 
 
 /*# sourceMappingURL=style.css.map */
+.buttonStudent {
+    background-color: #2191f5; /* Green */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    opacity: 90%;
+}
+
+
+.buttonCenter {
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.buttonCenter span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.buttonCenter span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: -11px;
+    right: -20px;
+    transition: 0.5s;
+    font-size: 30px;
+}
+
+.buttonCenter:hover {
+    transition: 0.5s;
+    opacity: 75%;
+}
+
+.buttonCenter:hover span {
+    padding-right: 25px;
+}
+
+.buttonCenter:hover span:after {
+    opacity: 1;
+    right: 0;
+}
